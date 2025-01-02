@@ -3,15 +3,15 @@ from fastapi.middleware.cors import CORSMiddleware
 from prometheus_client import Counter, Gauge, Histogram, Summary, generate_latest
 from fastapi.responses import Response
 import uvicorn
-import psutil  # For system metrics
+import psutil  
 
-# FastAPI Application
+
 app = FastAPI(
     title="Custom Monitoring Dashboard",
     description="A FastAPI-based dashboard for tracking application metrics",
 )
 
-# Configure CORS
+
 origins = ["*"]
 app.add_middleware(
     CORSMiddleware,
