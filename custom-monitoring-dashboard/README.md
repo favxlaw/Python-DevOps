@@ -42,6 +42,8 @@ A robust, real-time website monitoring solution built with **FastAPI** and **Pro
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/favxlaw/website-monitor.git
-   cd website-monitor
+   git clone https://github.com/favxlaw/Python-DevOps.git
+   cd custom-monitoring-dashboard
+
+   
 
