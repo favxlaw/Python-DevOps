@@ -3,9 +3,9 @@ version: "3.9"
 services:
   app:
     build: 
-      context: ./app  # Correctly specify the build context
-      dockerfile: Dockerfile  # Optional: specify the Dockerfile if it's named differently
-    command: sh -c "uvicorn main:app --reload --port=8000 --host=0.0.0.0"
+      context: ./app-2  
+      dockerfile: Dockerfile  
+    command: sh -c "uvicorn main:app-2 --reload --port=8000 --host=0.0.0.0"
     container_name: fastapi_app
     ports:
       - "8000:8000"
@@ -25,4 +25,3 @@ services:
 networks:
   monitoring:
     driver: bridge
-    
